@@ -52,7 +52,7 @@ typings/
 
 # Output of 'npm pack'
 *.tgz
-
+*.woff2
 # Yarn Integrity file
 .yarn-integrity
 

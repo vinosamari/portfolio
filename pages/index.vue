@@ -5,9 +5,9 @@
         :strings="['Designing', 'Developing', 'Deploying']"
         :loop="true"
         :typeSpeed="150"
-        :startDelay="2000"
+        :startDelay="1200"
         :smartBackspace="true"
-        :loopCount="4"
+        :backSpeed="50"
       >
         <h1>
           <span class="typing"></span> <br />
@@ -16,18 +16,20 @@
       </vue-typed-js>
     </div>
     <div id="about">
-      <h2 class="aboutHeader">Who?</h2>
-      <p class="aboutSummaru">
-        I'm a human being that designs web applications that make life easier
-        for individuals and businesses by using technologies like
-        <span class="font-bold"
-          >Javascript, Python, Google Firebase, Vue/Nuxt js, & Amazon Web
-          Services</span
-        >, to develop mobile-first user-friendly progressive web applications.
+      <h2 class="aboutHeader">Who</h2>
+      <p class="tracking-normal">
+        Sapwavino Samari is a human being that designs, develops and deploys
+        mobile-first user-friendly progressive web applications that make life
+        easier for individuals and businesses with technologies like
+        <span class="font-bold font-comfortaa tracking-wider"
+          >Javascript, Python, Google Firebase, Vue js, & Amazon Web
+          Services.</span
+        >
       </p>
+      <IconGroup />
     </div>
     <div id="projects">
-      <h2>What?</h2>
+      <h2>What</h2>
       <div class="project">
         <img
           src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
@@ -84,13 +86,13 @@ main {
   background-attachment: fixed;
   background-repeat: no-repeat;
   /* background-size: contain; */
-  @apply flex flex-col items-center font-customOne text-white;
+  @apply flex flex-col  font-customOne text-white;
 }
 .headerSection {
-  @apply text-center mx-auto pt-5 capitalize mt-10;
+  @apply mx-auto pt-5 capitalize mt-10 font-comfortaa text-xl;
 }
 .headerSection span {
-  @apply text-3xl capitalize font-mono;
+  @apply text-4xl capitalize font-silkscreen;
 }
 img {
   @apply w-44 object-contain rounded shadow-xl;
@@ -101,36 +103,28 @@ img {
 }
 #about h2,
 #projects h2 {
-  @apply text-3xl font-bold mb-4 uppercase underline;
+  @apply text-3xl mb-4 font-silkscreen uppercase tracking-widest;
 }
 #about p {
-  background: rgba(254, 252, 251, 0.102);
-  -webkit-backdrop-filter: blur(22px);
-  backdrop-filter: blur(22px);
-  border: 1px solid rgba(235, 210, 204, 0.1);
-  @apply p-5 rounded-sm shadow-md mb-5 font-extralight text-lg;
+  @apply p-5 rounded-md shadow-md mb-5 font-extralight bg-gradient-to-bl from-black via-gray-900 to-black font-overpass mx-32 py-10;
 }
 #projects {
   /* backdrop-filter: blur(2px); */
-  @apply grid grid-cols-2;
+  @apply grid grid-cols-2 mt-5;
 }
 #projects h2 {
   @apply col-span-2 text-center mt-8;
 }
 #projects .project {
-  background: rgba(255, 255, 255, 0.131);
-  -webkit-backdrop-filter: blur(22px);
-  backdrop-filter: blur(22px);
-  border: 1px solid rgba(235, 210, 204, 0.1);
-  @apply shadow-md mb-6 rounded-md p-5 w-3/4 mx-auto;
+  @apply shadow-md mb-6 rounded-md p-8 w-3/4 mx-auto bg-gradient-to-br from-black via-gray-900 to-black;
 }
 .projectName {
-  @apply font-bold text-2xl tracking-wider my-3;
+  @apply font-bold text-2xl tracking-wider my-4 font-overpass uppercase border-b pb-2 mr-24 mb-8;
 }
 .project p {
-  @apply mb-5 text-xs font-extralight;
+  @apply my-5 text-xs font-extralight font-comfortaa;
 }
 #projects a {
-  @apply bg-black font-mono text-white text-sm px-2 py-3 rounded shadow-xl uppercase;
+  @apply bg-black text-white text-sm px-2 py-3 rounded shadow-xl uppercase font-silkscreen mt-4;
 }
 </style>

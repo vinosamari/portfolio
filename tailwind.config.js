@@ -7,8 +7,28 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        silkscreen: ["Silkscreen"],
+        overpass: ["Overpass Mono"],
+        comfortaa: ["Comfortaa"],
+        libre: ['"Libre Barcode 39 Text"'],
         customOne: [
           "Ubuntu",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          '"Segoe UI"',
+          "Roboto",
+          '"Helvetica Neue"',
+          "Arial",
+          '"Noto Sans"',
+          "sans-serif",
+          '"Apple Color Emoji"',
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"',
+          '"Noto Color Emoji"',
+        ],
+        customTwo: [
+          "Source Code Pro",
           "system-ui",
           "-apple-system",
           "BlinkMacSystemFont",

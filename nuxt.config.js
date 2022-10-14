@@ -38,9 +38,16 @@ export default {
     "@nuxtjs/pwa",
   ],
   googleFonts: {
+    preconnect: true,
+    prefetch: true,
+    overwriting: true,
     families: {
       Ubuntu: true,
-      Montserrat: true,
+      Silkscreen: true,
+      Comfortaa: true,
+      "Source Code Pro": true,
+      "Libre+Barcode+39+Text": true,
+      "Overpass Mono": true,
     },
   },
 

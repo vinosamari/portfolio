@@ -1,10 +1,10 @@
 <template>
   <nav>
-    <GlitchText :text="`Sapwavino Samari`" />
-    <nuxt-link to="/#about">About</nuxt-link>
-    <nuxt-link to="/#skilss">Skills</nuxt-link>
-    <nuxt-link to="/#projects">Projects</nuxt-link>
-    <nuxt-link to="/#contact">Contact</nuxt-link>
+    <GlitchText :text="`Sapwavino`" class="GlitchText" />
+    <nuxt-link to="/#about">Who</nuxt-link>
+    <nuxt-link to="/#projects">What</nuxt-link>
+    <nuxt-link to="/#skilss">How</nuxt-link>
+    <nuxt-link to="/#contact">Where</nuxt-link>
   </nav>
 </template>
 
@@ -14,21 +14,15 @@ export default {};
 
 <style scoped>
 nav {
-  /* backdrop-filter: blur(2px);
-  background: rgb(93, 73, 84);
-  background: linear-gradient(
-    90deg,
-    rgba(93, 73, 84, 1) 0%,
-    rgba(121, 88, 97, 1) 35%,
-    rgba(240, 222, 213, 1) 100%
-  ); */
-  @apply flex items-center justify-between shadow-md fixed w-full z-50 top-0 font-customOne text-white;
+  @apply md:flex items-center justify-between shadow-md fixed w-full z-50 top-0 font-silkscreen text-white bg-black bg-opacity-80 grid grid-cols-2;
+}
+.GlitchText {
+  @apply col-span-2;
 }
 a {
-  background: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(22px);
   backdrop-filter: blur(22px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  @apply font-medium  hover:bg-customOne hover:text-white transform transition-all duration-500 ease-in-out mx-auto px-8 py-2 hover:shadow-2xl shadow-md rounded-sm tracking-wider text-sm underline;
+  border: 1px solid rgba(255, 255, 255, 0.229);
+  @apply font-medium  hover:bg-gray-900 hover:text-gray-200 transform transition-all duration-300 ease-in-out mx-auto px-8 py-2 hover:shadow-2xl shadow-md rounded-md tracking-wider text-sm hover:scale-125 border-r-0 border-l-0;
 }
 </style>
