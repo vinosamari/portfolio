@@ -67,6 +67,10 @@
         <a href="#" class="projectLink">See project</a>
       </div>
     </div>
+    <div id="skills">
+      <h2>How</h2>
+      <SkillsIcons />
+    </div>
   </main>
 </template>
 
@@ -102,7 +106,8 @@ img {
   @apply flex flex-col items-center justify-start text-left pt-14 px-20 mt-5;
 }
 #about h2,
-#projects h2 {
+#projects h2,
+#skills h2 {
   @apply text-3xl mb-4 font-silkscreen uppercase tracking-widest;
 }
 #about p {
@@ -126,5 +131,8 @@ img {
 }
 #projects a {
   @apply bg-black text-white text-sm px-2 py-3 rounded shadow-xl uppercase font-silkscreen mt-4;
+}
+#skills {
+  @apply flex flex-col items-center justify-center my-5;
 }
 </style>

@@ -3,7 +3,7 @@
     <GlitchText :text="`Sapwavino`" class="GlitchText" />
     <nuxt-link to="/#about">Who</nuxt-link>
     <nuxt-link to="/#projects">What</nuxt-link>
-    <nuxt-link to="/#skilss">How</nuxt-link>
+    <nuxt-link to="/#skills">How</nuxt-link>
     <nuxt-link to="/#contact">Where</nuxt-link>
   </nav>
 </template>
