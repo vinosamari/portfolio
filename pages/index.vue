@@ -31,40 +31,72 @@
     <div id="projects">
       <h2>What</h2>
       <div class="project">
-        <img
-          src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-          alt="project1"
-        />
-        <h3 class="projectName">AI project</h3>
+        <div class="grid grid-cols-2 place-items-center p-4 rounded-xl">
+          <img
+            src="https://i.postimg.cc/XqDYxPgx/smartmockups-l98y67y4.png"
+            alt="project1"
+          />
+          <img
+            src="https://i.postimg.cc/k448Tr5G/smartmockups-l9a3fn2p.png"
+            class="h-28"
+          />
+        </div>
+        <h3 class="projectName">Lumen Bar & Grill</h3>
+        <h4>Location: 🇬🇭</h4>
+        <h4>Platforms: 📱🖥️</h4>
         <p class="desc">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem,
-          laudantium.
+          A web app for placing and managing orders at Lumen Bar & Grill Eastern
+          Region, Ghana. It comes with a fully managed admin panel, flutterwave
+          payment gateway and realtime data storage for the menu using Firebase.
+          <br />[Note:] This is not a demo. You will be charged for orders you
+          make.
         </p>
-        <a href="#" class="projectLink">See project</a>
+        <a
+          href="https://lumenbarandgrill.vercel.app"
+          class="projectLink"
+          target="_blank"
+          >See project</a
+        >
+        <ul class="technologies">
+          <li>Nuxt Js</li>
+          <li>Google Firebase</li>
+          <li>Flutterwave</li>
+          <li>Tailwind CSS</li>
+        </ul>
       </div>
       <div class="project">
-        <img
-          src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-          alt="project1"
-        />
-        <h3 class="projectName">Python project</h3>
+        <div class="grid grid-cols-2 place-items-center p-4 rounded-xl">
+          <img
+            src="https://i.postimg.cc/L8bHbVX5/smartmockups-l9a0zg5o.png"
+            alt="project1"
+          />
+          <img
+            src="https://i.postimg.cc/cHst6p3T/smartmockups-l9a3d6oe.png"
+            class="h-28"
+          />
+        </div>
+        <h3 class="projectName">Serah Johnson</h3>
+        <h4>Location: 🇳🇬🌍</h4>
+        <h4>Platforms: 📱🖥️</h4>
         <p class="desc">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem,
-          laudantium.
+          Serah johnson is a professional voice actor and coach with years of
+          experience in radio and voice acting. This web app was designed to
+          enable her onboard new clients easily and showcase her work with a
+          custom audio player and contact form. <br />
+          [Note:] It works. Reach out to her for your projects.
         </p>
-        <a href="#" class="projectLink">See project</a>
-      </div>
-      <div class="project">
-        <img
-          src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80"
-          alt="project1"
-        />
-        <h3 class="projectName">Javascript project</h3>
-        <p class="desc">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem,
-          laudantium.
-        </p>
-        <a href="#" class="projectLink">See project</a>
+        <a
+          href="https://serahjohnson.vercel.app"
+          target="_blank"
+          class="projectLink"
+          >See project</a
+        >
+        <ul class="technologies">
+          <li>Nuxt Js</li>
+          <li>Google Firebase</li>
+          <li>Flutterwave</li>
+          <li>Tailwind CSS</li>
+        </ul>
       </div>
     </div>
     <div id="skills">
@@ -98,9 +130,6 @@ main {
 .headerSection span {
   @apply text-4xl capitalize font-silkscreen;
 }
-img {
-  @apply w-44 object-contain rounded shadow-xl;
-}
 #about {
   /* backdrop-filter: blur(2px); */
   @apply flex flex-col items-center justify-start text-left pt-14 px-20 mt-5;
@@ -120,6 +149,9 @@ img {
 #projects h2 {
   @apply col-span-2 text-center mt-8;
 }
+#projects h4 {
+  @apply text-sm;
+}
 #projects .project {
   @apply shadow-md mb-6 rounded-md p-8 w-3/4 mx-auto bg-gradient-to-br from-black via-gray-900 to-black;
 }
@@ -127,12 +159,18 @@ img {
   @apply font-bold text-2xl tracking-wider my-4 font-overpass uppercase border-b pb-2 mr-24 mb-8;
 }
 .project p {
-  @apply my-5 text-xs font-extralight font-comfortaa;
+  @apply my-5 text-xs font-extralight font-comfortaa leading-5;
 }
 #projects a {
   @apply bg-black text-white text-sm px-2 py-3 rounded shadow-xl uppercase font-silkscreen mt-4;
 }
 #skills {
   @apply flex flex-col items-center justify-center my-5;
+}
+.technologies {
+  @apply text-xs grid grid-cols-2 w-5/6 my-5;
+}
+.technologies li {
+  @apply tracking-tight my-2 bg-gray-700 w-5/6 rounded-3xl py-1 text-center bg-opacity-30 text-gray-400 font-customOne;
 }
 </style>
