@@ -272,7 +272,7 @@ export default {};
 
 <style scoped>
 div {
-  @apply grid grid-cols-5 w-10/12 mx-auto gap-5;
+  @apply grid md:grid-cols-5 w-10/12 mx-auto gap-5 grid-cols-3;
 }
 h2 {
   @apply mb-1 text-sm px-5 text-center;

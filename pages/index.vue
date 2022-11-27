@@ -116,35 +116,28 @@ export default {
 
 <style scoped>
 main {
-  background: black;
-  /* background-color: #b29e9c; */
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  /* background-size: contain; */
-  @apply flex flex-col  font-customOne text-white;
+  @apply flex flex-col  font-customOne text-white bg-black;
 }
 .headerSection {
-  @apply mx-auto pt-5 capitalize mt-10 font-comfortaa text-xl;
+  @apply mx-auto pt-20 md:pt-5 capitalize mt-10 font-comfortaa text-xl;
 }
 .headerSection span {
   @apply text-4xl capitalize font-silkscreen;
 }
 #about {
-  /* backdrop-filter: blur(2px); */
-  @apply flex flex-col items-center justify-start text-left pt-14 px-20 mt-5;
+  @apply flex flex-col items-center justify-start text-left pt-14 md:px-20 md:mt-5 my-1 px-5;
 }
 #about h2,
 #projects h2,
 #skills h2 {
-  @apply text-3xl mb-4 font-silkscreen uppercase tracking-widest;
+  @apply text-3xl md:mb-4 font-silkscreen uppercase tracking-widest;
 }
 #about p {
-  @apply p-5 rounded-md shadow-md mb-5 font-extralight bg-gradient-to-bl from-black via-gray-900 to-black font-overpass mx-32 py-10;
+  @apply p-5 rounded-md shadow-md mb-5 font-extralight bg-gradient-to-bl from-black via-gray-900 to-black font-overpass md:mx-32 md:py-10 py-5 text-center md:text-left;
 }
 #projects {
   /* backdrop-filter: blur(2px); */
-  @apply grid grid-cols-2 mt-5;
+  @apply md:grid md:grid-cols-2 mt-5;
 }
 #projects h2 {
   @apply col-span-2 text-center mt-8;
@@ -153,10 +146,10 @@ main {
   @apply text-sm;
 }
 #projects .project {
-  @apply shadow-md mb-6 rounded-md p-8 w-3/4 mx-auto bg-gradient-to-br from-black via-gray-900 to-black;
+  @apply shadow-md mb-6 rounded-md p-8 md:w-3/4 mx-auto bg-gradient-to-br from-black via-gray-900 to-black text-center md:text-left w-5/6;
 }
 .projectName {
-  @apply font-bold text-2xl tracking-wider my-4 font-overpass uppercase border-b pb-2 mr-24 mb-8;
+  @apply font-bold text-2xl tracking-wider my-4 font-overpass uppercase border-b pb-2 md:mr-24 md:mb-8;
 }
 .project p {
   @apply my-5 text-xs font-extralight font-comfortaa leading-5;
@@ -168,7 +161,7 @@ main {
   @apply flex flex-col items-center justify-center my-5;
 }
 .technologies {
-  @apply text-xs grid grid-cols-2 w-5/6 my-5;
+  @apply text-xs grid grid-cols-2 md:w-5/6 my-5 mx-auto;
 }
 .technologies li {
   @apply tracking-tight my-2 bg-gray-700 w-5/6 rounded-3xl py-1 text-center bg-opacity-30 text-gray-400 font-customOne;

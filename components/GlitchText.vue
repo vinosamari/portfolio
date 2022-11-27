@@ -18,7 +18,7 @@ export default {
   align-items: center;
   justify-content: center;
   text-align: center;
-  @apply font-libre md:text-4xl text-3xl tracking-widest bg-black text-white font-bold py-4;
+  @apply font-libre md:text-4xl text-3xl tracking-widest bg-black text-white font-bold py-4 mx-auto;
 }
 
 .glitch {
